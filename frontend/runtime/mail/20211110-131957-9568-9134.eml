@@ -1,0 +1,50 @@
+Message-ID: <418ba316627fd860555cde26bbaf4773@localhost>
+Date: Wed, 10 Nov 2021 13:19:57 +0000
+Subject: Account registration at My Application
+From: My Application robot <support@example.com>
+To: bryan.zibeuan@itsva.edu.mx
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1636550397_175dbf4d0133f37e62046127d78d2803_=_"
+
+
+--_=_swift_1636550397_175dbf4d0133f37e62046127d78d2803_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello Fernando,
+
+Follow the link below to verify your email:
+
+http://localhost:8080/zuntic_control_v1/frontend/web/index.php?r=3Dsite%2Fv=
+erify-email&token=3DvPJdchm1C6fD9Za8INXMRLV9uI2NfhwG_1636550397
+
+--_=_swift_1636550397_175dbf4d0133f37e62046127d78d2803_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+" />
+    <title></title>
+    </head>
+<body>
+        <div class=3D"verify-email">
+    <p>Hello Fernando,</p>
+
+    <p>Follow the link below to verify your email:</p>
+
+    <p><a href=3D"http://localhost:8080/zuntic_control_v1/frontend/web/inde=
+x.php?r=3Dsite%2Fverify-email&amp;token=3DvPJdchm1C6fD9Za8INXMRLV9uI2NfhwG_=
+1636550397">http://localhost:8080/zuntic_control_v1/frontend/web/index.php?=
+r=3Dsite%2Fverify-email&amp;token=3DvPJdchm1C6fD9Za8INXMRLV9uI2NfhwG_163655=
+0397</a></p>
+</div>
+    </body>
+</html>
+
+
+--_=_swift_1636550397_175dbf4d0133f37e62046127d78d2803_=_--
