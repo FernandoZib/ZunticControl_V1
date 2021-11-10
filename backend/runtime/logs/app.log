@@ -9678,3 +9678,176 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1636584562.859
     'REQUEST_TIME' => 1636584562
 ]
+2021-11-11 00:06:45 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 35468 bytes' 
+
+in C:\xampp\htdocs\zuntic_control_v1\vendor\opis\closure\functions.php:36
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\xampp\\htdocs...', 36, Array)
+#1 C:\xampp\htdocs\zuntic_control_v1\vendor\opis\closure\functions.php(36): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\xampp\htdocs\zuntic_control_v1\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): Opis\Closure\unserialize('<<<<<<< HEAD\r\na...')
+#3 C:\xampp\htdocs\zuntic_control_v1\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\zuntic_control_v1\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\xampp\htdocs\zuntic_control_v1\vendor\yiisoft\yii2\log\Dispatcher.php(191): yii\debug\LogTarget->collect(Array, true)
+#6 C:\xampp\htdocs\zuntic_control_v1\vendor\yiisoft\yii2\log\Logger.php(227): yii\log\Dispatcher->dispatch(Array, true)
+#7 [internal function]: yii\log\Logger->flush(true)
+#8 {main}
+2021-11-11 00:06:44 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '8406aahgp09mrijef5kkgihubg'
+    '_csrf-frontend' => '3fb48b457453a52209158135c533352155603fce55aab92c1d9c25d92f417513a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"EYPUXmp60vA7wADW4MJGvNdeTAa4ctGP\";}'
+    'advanced-backend' => '2mqcu6esmarlnuhl8r1tm0f2ao'
+    '_csrf-backend' => '5bbc227ed7adb73786dfdb63c1232ae8a4cc47f223c85521a1e93ffe9a660f71a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FU-Bp0Tga0XSDvegsF136tAWMtbpJZjt\";}'
+    '_identity-backend' => '30fceee6de2c9b3c2826519bececaa0eb6032e2357337136f2d6613c1147fcbaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"aOPjxqVxGnXsQB6NKYcfvBWHzMt5zKHJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/zuntic_control_v1/backend/web/index.php'
+    '__id' => 1
+    '__authKey' => 'aOPjxqVxGnXsQB6NKYcfvBWHzMt5zKHJ'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/zuntic_control_v1/backend/web/index.php?r=site%2Flogin'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=8406aahgp09mrijef5kkgihubg; _csrf-frontend=3fb48b457453a52209158135c533352155603fce55aab92c1d9c25d92f417513a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22EYPUXmp60vA7wADW4MJGvNdeTAa4ctGP%22%3B%7D; advanced-backend=2mqcu6esmarlnuhl8r1tm0f2ao; _csrf-backend=5bbc227ed7adb73786dfdb63c1232ae8a4cc47f223c85521a1e93ffe9a660f71a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FU-Bp0Tga0XSDvegsF136tAWMtbpJZjt%22%3B%7D; _identity-backend=30fceee6de2c9b3c2826519bececaa0eb6032e2357337136f2d6613c1147fcbaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22aOPjxqVxGnXsQB6NKYcfvBWHzMt5zKHJ%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\AdoptOpenJDK\\jdk-11.0.11.9-hotspot\\bin;C:\\Program Files\\Rockwell Software\\RSCommon;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32;C:\\Windows;C:\\Windows\\System32\\wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\GnuPG\\bin;C:\\Users\\cecilio\\anaconda3;C:\\Users\\cecilio\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\mysql\\mysql5.7.31\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\Apache-svn\\bin;C:\\composer;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/zuntic_control_v1/backend/web/index.php'
+    'REMOTE_PORT' => '59508'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/zuntic_control_v1/backend/web/index.php'
+    'SCRIPT_NAME' => '/zuntic_control_v1/backend/web/index.php'
+    'PHP_SELF' => '/zuntic_control_v1/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1636585604.635
+    'REQUEST_TIME' => 1636585604
+]
+2021-11-11 00:14:05 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 35468 bytes' 
+
+in C:\xampp\htdocs\zuntic_control_v1\vendor\opis\closure\functions.php:36
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\xampp\\htdocs...', 36, Array)
+#1 C:\xampp\htdocs\zuntic_control_v1\vendor\opis\closure\functions.php(36): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\xampp\htdocs\zuntic_control_v1\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): Opis\Closure\unserialize('<<<<<<< HEAD\r\na...')
+#3 C:\xampp\htdocs\zuntic_control_v1\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\zuntic_control_v1\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\xampp\htdocs\zuntic_control_v1\vendor\yiisoft\yii2\log\Dispatcher.php(191): yii\debug\LogTarget->collect(Array, true)
+#6 C:\xampp\htdocs\zuntic_control_v1\vendor\yiisoft\yii2\log\Logger.php(227): yii\log\Dispatcher->dispatch(Array, true)
+#7 [internal function]: yii\log\Logger->flush(true)
+#8 {main}
+2021-11-11 00:14:05 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'huesped/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '8406aahgp09mrijef5kkgihubg'
+    '_csrf-frontend' => '3fb48b457453a52209158135c533352155603fce55aab92c1d9c25d92f417513a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"EYPUXmp60vA7wADW4MJGvNdeTAa4ctGP\";}'
+    'advanced-backend' => '2mqcu6esmarlnuhl8r1tm0f2ao'
+    '_csrf-backend' => '5bbc227ed7adb73786dfdb63c1232ae8a4cc47f223c85521a1e93ffe9a660f71a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FU-Bp0Tga0XSDvegsF136tAWMtbpJZjt\";}'
+    '_identity-backend' => '30fceee6de2c9b3c2826519bececaa0eb6032e2357337136f2d6613c1147fcbaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"aOPjxqVxGnXsQB6NKYcfvBWHzMt5zKHJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/zuntic_control_v1/backend/web/index.php'
+    '__id' => 1
+    '__authKey' => 'aOPjxqVxGnXsQB6NKYcfvBWHzMt5zKHJ'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/zuntic_control_v1/backend/web/index.php'
+    'HTTP_COOKIE' => 'advanced-frontend=8406aahgp09mrijef5kkgihubg; _csrf-frontend=3fb48b457453a52209158135c533352155603fce55aab92c1d9c25d92f417513a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22EYPUXmp60vA7wADW4MJGvNdeTAa4ctGP%22%3B%7D; advanced-backend=2mqcu6esmarlnuhl8r1tm0f2ao; _csrf-backend=5bbc227ed7adb73786dfdb63c1232ae8a4cc47f223c85521a1e93ffe9a660f71a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FU-Bp0Tga0XSDvegsF136tAWMtbpJZjt%22%3B%7D; _identity-backend=30fceee6de2c9b3c2826519bececaa0eb6032e2357337136f2d6613c1147fcbaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22aOPjxqVxGnXsQB6NKYcfvBWHzMt5zKHJ%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_GPC' => '1'
+    'PATH' => 'C:\\Program Files\\AdoptOpenJDK\\jdk-11.0.11.9-hotspot\\bin;C:\\Program Files\\Rockwell Software\\RSCommon;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32;C:\\Windows;C:\\Windows\\System32\\wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\GnuPG\\bin;C:\\Users\\cecilio\\anaconda3;C:\\Users\\cecilio\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\mysql\\mysql5.7.31\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\Apache-svn\\bin;C:\\composer;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/zuntic_control_v1/backend/web/index.php'
+    'REMOTE_PORT' => '61690'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=huesped%2Findex'
+    'REQUEST_URI' => '/zuntic_control_v1/backend/web/index.php?r=huesped%2Findex'
+    'SCRIPT_NAME' => '/zuntic_control_v1/backend/web/index.php'
+    'PHP_SELF' => '/zuntic_control_v1/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1636586045.533
+    'REQUEST_TIME' => 1636586045
+]
