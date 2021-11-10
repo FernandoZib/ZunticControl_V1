@@ -1,0 +1,20 @@
+<?php
+
+use yii\helpers\Html;
+
+/* @var $this yii\web\View */
+/* @var $model backend\models\Habitacion */
+
+$this->title = 'Create Habitacion';
+$this->params['breadcrumbs'][] = ['label' => 'Habitacions', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
+?>
+<div class="habitacion-create">
+
+    <h1><?= Html::encode($this->title) ?></h1>
+
+    <?= $this->render('_form', [
+        'model' => $model,
+    ]) ?>
+
+</div>
