@@ -24,14 +24,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id_estancia')->textInput() ?>
 
-    <?= $form->field($model, 'creado_el')->textInput() ?>
-
-    <?= $form->field($model, 'actualizado_el')->textInput() ?>
-
-    <?= $form->field($model, 'creado_por')->textInput() ?>
-
-    <?= $form->field($model, 'actualizado_por')->textInput() ?>
-
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>

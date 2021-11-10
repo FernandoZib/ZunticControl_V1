@@ -3,6 +3,9 @@
 namespace backend\models;
 
 use Yii;
+use yii\behaviors\TimestampBehavior; 
+use yii\behaviors\BlameableBehavior; 
+use yii\db\Expression;
 
 /**
  * This is the model class for table "huesped".
@@ -40,14 +43,30 @@ class Huesped extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['nombre', 'telefono', 'correo', 'id_cuenta', 'id_habitacion', 'id_estancia', 'creado_el', 'actualizado_el', 'creado_por', 'actualizado_por'], 'required'],
-            [['telefono', 'correo', 'id_cuenta', 'id_habitacion', 'id_estancia', 'creado_el', 'actualizado_el'], 'integer'],
+            [['nombre', 'telefono', 'correo', 'id_cuenta', 'id_habitacion', 'id_estancia'], 'required'],
             [['creado_por', 'actualizado_por'], 'safe'],
             [['nombre'], 'string', 'max' => 255],
             [['id_cuenta'], 'exist', 'skipOnError' => true, 'targetClass' => Cuenta::className(), 'targetAttribute' => ['id_cuenta' => 'id']],
             [['id_cuenta'], 'exist', 'skipOnError' => true, 'targetClass' => Cuenta::className(), 'targetAttribute' => ['id_cuenta' => 'id']],
             [['id_estancia'], 'exist', 'skipOnError' => true, 'targetClass' => Estancia::className(), 'targetAttribute' => ['id_estancia' => 'id']],
             [['id_habitacion'], 'exist', 'skipOnError' => true, 'targetClass' => Habitacion::className(), 'targetAttribute' => ['id_habitacion' => 'id']],
+        ];
+    }
+
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => TimestampBehavior::className(),
+                'createdAtAttribute' => 'created_at',
+                'updatedAtAttribute' => 'updated_at',
+                'value' => new Expression('NOW()'),
+            ],
+            [
+                'class' => BlameableBehavior::className(),
+                'createdByAttribute' => 'created_by',
+                'updatedByAttribute' => 'updated_by',
+            ],
         ];
     }
 
