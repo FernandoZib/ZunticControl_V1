@@ -1,0 +1,50 @@
+Message-ID: <ecc500356495c8e9675f8e2943291f6b@localhost>
+Date: Wed, 10 Nov 2021 05:43:29 +0000
+Subject: Account registration at My Application
+From: My Application robot <support@example.com>
+To: angel.nn@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1636523010_8b651a92ea21faba3385216e27946963_=_"
+
+
+--_=_swift_1636523010_8b651a92ea21faba3385216e27946963_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello angel.nahuat,
+
+Follow the link below to verify your email:
+
+http://localhost/zuntic/zuntic_control_v1/frontend/web/index.php?r=3Dsite%2=
+Fverify-email&token=3D2rtdxUlX88FvTVoja4f4yKA14YYLlhE3_1636523008
+
+--_=_swift_1636523010_8b651a92ea21faba3385216e27946963_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+" />
+    <title></title>
+    </head>
+<body>
+        <div class=3D"verify-email">
+    <p>Hello angel.nahuat,</p>
+
+    <p>Follow the link below to verify your email:</p>
+
+    <p><a href=3D"http://localhost/zuntic/zuntic_control_v1/frontend/web/in=
+dex.php?r=3Dsite%2Fverify-email&amp;token=3D2rtdxUlX88FvTVoja4f4yKA14YYLlhE=
+3_1636523008">http://localhost/zuntic/zuntic_control_v1/frontend/web/index.=
+php?r=3Dsite%2Fverify-email&amp;token=3D2rtdxUlX88FvTVoja4f4yKA14YYLlhE3_16=
+36523008</a></p>
+</div>
+    </body>
+</html>
+
+
+--_=_swift_1636523010_8b651a92ea21faba3385216e27946963_=_--
