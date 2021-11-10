@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php
 /*
  * This file is part of PHPUnit.
  *
@@ -7,74 +7,54 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace PHPUnit\Framework\Constraint;
 
-use function count;
-use function is_array;
-use function iterator_count;
-use function sprintf;
-use Countable;
-use EmptyIterator;
-use Generator;
-use Iterator;
-use IteratorAggregate;
-use Traversable;
-
-class Count extends Constraint
+class PHPUnit_Framework_Constraint_Count extends PHPUnit_Framework_Constraint
 {
     /**
      * @var int
      */
-    private $expectedCount;
+    protected $expectedCount = 0;
 
-    public function __construct(int $expected)
+    /**
+     * @param int $expected
+     */
+    public function __construct($expected)
     {
+        parent::__construct();
         $this->expectedCount = $expected;
-    }
-
-    public function toString(): string
-    {
-        return sprintf(
-            'count matches %d',
-            $this->expectedCount
-        );
     }
 
     /**
      * Evaluates the constraint for parameter $other. Returns true if the
      * constraint is met, false otherwise.
+     *
+     * @param mixed $other
+     *
+     * @return bool
      */
-    protected function matches($other): bool
+    protected function matches($other)
     {
         return $this->expectedCount === $this->getCountOf($other);
     }
 
     /**
-     * @param iterable $other
+     * @param mixed $other
+     *
+     * @return bool
      */
-    protected function getCountOf($other): ?int
+    protected function getCountOf($other)
     {
         if ($other instanceof Countable || is_array($other)) {
             return count($other);
-        }
-
-        if ($other instanceof EmptyIterator) {
-            return 0;
-        }
-
-        if ($other instanceof Traversable) {
-            while ($other instanceof IteratorAggregate) {
-                $other = $other->getIterator();
+        } elseif ($other instanceof Traversable) {
+            if ($other instanceof IteratorAggregate) {
+                $iterator = $other->getIterator();
+            } else {
+                $iterator = $other;
             }
-
-            $iterator = $other;
 
             if ($iterator instanceof Generator) {
                 return $this->getCountOfGenerator($iterator);
-            }
-
-            if (!$iterator instanceof Iterator) {
-                return iterator_count($iterator);
             }
 
             $key   = $iterator->key();
@@ -84,7 +64,6 @@ class Count extends Constraint
             // moves pointer.
             if ($key !== null) {
                 $iterator->rewind();
-
                 while ($iterator->valid() && $key !== $iterator->key()) {
                     $iterator->next();
                 }
@@ -92,18 +71,20 @@ class Count extends Constraint
 
             return $count;
         }
-
-        return null;
     }
 
     /**
      * Returns the total number of iterations from a generator.
      * This will fully exhaust the generator.
+     *
+     * @param Generator $generator
+     *
+     * @return int
      */
-    protected function getCountOfGenerator(Generator $generator): int
+    protected function getCountOfGenerator(Generator $generator)
     {
         for ($count = 0; $generator->valid(); $generator->next()) {
-            $count++;
+            $count += 1;
         }
 
         return $count;
@@ -115,13 +96,26 @@ class Count extends Constraint
      * The beginning of failure messages is "Failed asserting that" in most
      * cases. This method should return the second part of that sentence.
      *
-     * @param mixed $other evaluated value or object
+     * @param mixed $other Evaluated value or object.
+     *
+     * @return string
      */
-    protected function failureDescription($other): string
+    protected function failureDescription($other)
     {
         return sprintf(
             'actual size %d matches expected size %d',
             $this->getCountOf($other),
+            $this->expectedCount
+        );
+    }
+
+    /**
+     * @return string
+     */
+    public function toString()
+    {
+        return sprintf(
+            'count matches %d',
             $this->expectedCount
         );
     }

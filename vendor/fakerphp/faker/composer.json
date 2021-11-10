@@ -14,14 +14,12 @@
         }
     ],
     "require": {
-        "php": "^7.1 || ^8.0",
-        "psr/container": "^1.0 || ^2.0",
-        "symfony/deprecation-contracts": "^2.2"
+        "php": "^5.3.3 || ^7.0"
     },
     "require-dev": {
         "ext-intl": "*",
-        "bamarni/composer-bin-plugin": "^1.4.1",
-        "symfony/phpunit-bridge": "^4.4 || ^5.2"
+        "phpunit/phpunit": "^4.8.35 || ^5.7",
+        "squizlabs/php_codesniffer": "^2.9.2"
     },
     "autoload": {
         "psr-4": {
@@ -30,25 +28,18 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Faker\\Test\\": "test/Faker/",
-            "Faker\\Test\\Fixture\\": "test/Fixture/"
+            "Faker\\Test\\": "test/Faker/"
         }
     },
     "conflict": {
-        "fzaninotto/faker": "*"
+        "fzaninotto/faker": "!=1.9.2",
+        "ergebnis/faker": "!=1.9.2"
     },
-    "suggest": {
-        "ext-curl": "Required by Faker\\Provider\\Image to download images.",
-        "ext-dom": "Required by Faker\\Provider\\HtmlLorem for generating random HTML.",
-        "ext-iconv": "Required by Faker\\Provider\\ru_RU\\Text::realText() for generating real Russian text.",
-        "ext-mbstring": "Required for multibyte Unicode string functionality."
+    "replace": {
+        "fzaninotto/faker": "1.9.2",
+        "ergebnis/faker": "1.9.2"
     },
     "config": {
         "sort-packages": true
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-main": "v1.16-dev"
-        }
     }
 }

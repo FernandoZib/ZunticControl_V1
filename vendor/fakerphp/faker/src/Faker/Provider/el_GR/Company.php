@@ -1,24 +1,23 @@
-<?php
-
-namespace Faker\Provider\el_GR;
+<?php namespace Faker\Provider\el_GR;
 
 class Company extends \Faker\Provider\Company
 {
-    protected static $companySuffix = [
+    protected static $companySuffix = array(
         'Ο.Ε',
         'Ε.Ε',
         'Α.Ε',
-        'Ε.Π.Ε',
-    ];
+        'Ε.Π.Ε'
+    );
 
-    protected static $companyFormats = [
+    protected static $companyFormats = array(
         '{{lastName}} {{firstName}} {{companySuffix}}',
-        '{{lastName}}-{{firstName}}',
-    ];
+        '{{lastName}}-{{firstName}}'
+    );
 
-    protected static $grafm = ['#########'];
+    protected static $grafm = array('#########');
 
-    protected static $doy = [
+
+    protected static $doy = array(
         'Α\' Αθήνας',
         'Β\' Αθήνας',
         'Γ\' Αθήνας',
@@ -39,10 +38,11 @@ class Company extends \Faker\Provider\Company
         'Αμοργού',
         'Πατρών',
         'ΔΟΥ ΠΛΟΙΩΝ',
-        'ΦΑΕΕ ΑΘΗΝΩΝ',
-    ];
+        'ΦΑΕΕ ΑΘΗΝΩΝ'
+    );
 
-    protected static $object = [
+
+    protected static $object = array(
         'Προγραμματιστής',
         'Δικηγόρος',
         'Γιατρός',
@@ -62,7 +62,7 @@ class Company extends \Faker\Provider\Company
         'Εισαγωγαί-εξαγωγαί',
         'Ωρολογοποιός',
         'Καθεκλοποιός',
-    ];
+    );
 
     /**
      * @example 'Αθήνας'
