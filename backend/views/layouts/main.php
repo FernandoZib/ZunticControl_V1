@@ -46,10 +46,15 @@ AppAsset::register($this);
             'options' =>['class' =>'dropdown'],
             'template'=>'<a href="{url}" class="href_class">{label}</a>',
             'items' =>[ 
-                        ['label' => 'Huespedes', 'url' => ['project/index']],
-                        ['label' => 'Habitaciones', 'url' => ['habitacion/index']],   
-                        ['label' => 'Projecto-Usuario', 'url' => ['project-user/index']],                                                 
-                      ],
+                        ['label' => 'Huespedes', 'url' => ['huesped/index']],
+                        ['label' => 'Cuentas', 'url' => ['cuenta/index']],
+                        ['label' => 'Estancia', 'url' => ['estancia/index']],
+                        ['label' => 'Habitaciones', 'url' => ['habitacion/index']],
+                        ['label' => 'Tipo de habitaciones', 'url' => ['tipo-habitacion/index']],   
+                        ['label' => 'Estado', 'url' => ['estado/index']],
+                        ['label' => 'Limpieza', 'url' => ['limpieza/index']],
+                        ['label' => 'Ocupacion', 'url' => ['ocupacion/index']],                                                 
+                    ],
         ];
 
         $menuItems[] = '<li>'
