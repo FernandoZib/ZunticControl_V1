@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php
 /*
  * This file is part of PHPUnit.
  *
@@ -7,14 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace PHPUnit\Framework\Constraint;
-
-use function get_class;
-use function is_object;
-use function sprintf;
-use PHPUnit\Framework\Exception;
-use ReflectionClass;
-use ReflectionException;
 
 /**
  * Constraint that asserts that the class it is evaluated for has a given
@@ -22,22 +14,43 @@ use ReflectionException;
  *
  * The attribute name is passed in the constructor.
  */
-class ClassHasAttribute extends Constraint
+class PHPUnit_Framework_Constraint_ClassHasAttribute extends PHPUnit_Framework_Constraint
 {
     /**
      * @var string
      */
-    private $attributeName;
+    protected $attributeName;
 
-    public function __construct(string $attributeName)
+    /**
+     * @param string $attributeName
+     */
+    public function __construct($attributeName)
     {
+        parent::__construct();
         $this->attributeName = $attributeName;
     }
 
     /**
-     * Returns a string representation of the constraint.
+     * Evaluates the constraint for parameter $other. Returns true if the
+     * constraint is met, false otherwise.
+     *
+     * @param mixed $other Value or object to evaluate.
+     *
+     * @return bool
      */
-    public function toString(): string
+    protected function matches($other)
+    {
+        $class = new ReflectionClass($other);
+
+        return $class->hasProperty($this->attributeName);
+    }
+
+    /**
+     * Returns a string representation of the constraint.
+     *
+     * @return string
+     */
+    public function toString()
     {
         return sprintf(
             'has attribute "%s"',
@@ -46,35 +59,16 @@ class ClassHasAttribute extends Constraint
     }
 
     /**
-     * Evaluates the constraint for parameter $other. Returns true if the
-     * constraint is met, false otherwise.
-     *
-     * @param mixed $other value or object to evaluate
-     */
-    protected function matches($other): bool
-    {
-        try {
-            return (new ReflectionClass($other))->hasProperty($this->attributeName);
-            // @codeCoverageIgnoreStart
-        } catch (ReflectionException $e) {
-            throw new Exception(
-                $e->getMessage(),
-                (int) $e->getCode(),
-                $e
-            );
-        }
-        // @codeCoverageIgnoreEnd
-    }
-
-    /**
-     * Returns the description of the failure.
+     * Returns the description of the failure
      *
      * The beginning of failure messages is "Failed asserting that" in most
      * cases. This method should return the second part of that sentence.
      *
-     * @param mixed $other evaluated value or object
+     * @param mixed $other Evaluated value or object.
+     *
+     * @return string
      */
-    protected function failureDescription($other): string
+    protected function failureDescription($other)
     {
         return sprintf(
             '%sclass "%s" %s',
@@ -82,10 +76,5 @@ class ClassHasAttribute extends Constraint
             is_object($other) ? get_class($other) : $other,
             $this->toString()
         );
-    }
-
-    protected function attributeName(): string
-    {
-        return $this->attributeName;
     }
 }

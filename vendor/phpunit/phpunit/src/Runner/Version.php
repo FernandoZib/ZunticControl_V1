@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php
 /*
  * This file is part of PHPUnit.
  *
@@ -7,44 +7,40 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace PHPUnit\Runner;
 
-use function array_slice;
-use function dirname;
-use function explode;
-use function implode;
-use function strpos;
-use SebastianBergmann\Version as VersionId;
+use SebastianBergmann\Version;
 
-final class Version
+/**
+ * This class defines the current version of PHPUnit.
+ */
+class PHPUnit_Runner_Version
 {
-    /**
-     * @var string
-     */
-    private static $pharVersion = '';
-
-    /**
-     * @var string
-     */
-    private static $version = '';
+    private static $pharVersion;
+    private static $version;
 
     /**
      * Returns the current version of PHPUnit.
+     *
+     * @return string
      */
-    public static function id(): string
+    public static function id()
     {
-        if (self::$pharVersion !== '') {
+        if (self::$pharVersion !== null) {
             return self::$pharVersion;
         }
 
-        if (self::$version === '') {
-            self::$version = (new VersionId('8.5.21', dirname(__DIR__, 2)))->getVersion();
+        if (self::$version === null) {
+            $version       = new Version('5.7.27', dirname(dirname(__DIR__)));
+            self::$version = $version->getVersion();
         }
 
         return self::$version;
     }
 
-    public static function series(): string
+    /**
+     * @return string
+     */
+    public static function series()
     {
         if (strpos(self::id(), '-')) {
             $version = explode('-', self::id())[0];
@@ -55,15 +51,21 @@ final class Version
         return implode('.', array_slice(explode('.', $version), 0, 2));
     }
 
-    public static function getVersionString(): string
+    /**
+     * @return string
+     */
+    public static function getVersionString()
     {
         return 'PHPUnit ' . self::id() . ' by Sebastian Bergmann and contributors.';
     }
 
-    public static function getReleaseChannel(): string
+    /**
+     * @return string
+     */
+    public static function getReleaseChannel()
     {
         if (strpos(self::$pharVersion, '-') !== false) {
-            return '-snapshot';
+            return '-nightly';
         }
 
         return '';
