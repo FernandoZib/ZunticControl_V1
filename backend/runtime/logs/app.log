@@ -4859,3 +4859,413 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1636571048.618
     'REQUEST_TIME' => 1636571048
 ]
+2021-11-10 20:54:53 [::1][5][hg7tie1c17a5ihg9q6tof2f2a3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "hospedaje/index". in C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('hospedaje/index', Array)
+#1 C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\zuntic_control_v1\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\zuntic_control_v1\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2021-11-10 20:54:53 [::1][5][hg7tie1c17a5ihg9q6tof2f2a3][info][application] $_GET = [
+    'r' => 'hospedaje/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Webstorm-1924e008' => 'b6cdbc41-c5cb-4d80-a337-faf1458f4192'
+    'advanced-frontend' => 'ceh7mt2gtmokh8nmgvhim87k30'
+    '_identity-frontend' => 'c2a30d5bbb284bf5c3cb9ebcf208d961b160e035d2d08f266fc0391cff9cb427a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[5,\"6D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND\",2592000]\";}'
+    '_csrf-frontend' => 'e1b31e72961a57e4c7aa43d206d4a3853f58f2780e854f30ffceb7b5a91fa213a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"x0BLhmQjUn4na2HxqI-FFZQshSXw0Qtd\";}'
+    'advanced-backend' => 'hg7tie1c17a5ihg9q6tof2f2a3'
+    '_identity-backend' => 'fa5543b268fddb870b56ae6d99639156efce497ee2907595e807317a17e052e7a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[5,\"6D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND\",2592000]\";}'
+    '_csrf-backend' => '5950bed5a248bc0bf41bc65fe6cb22b1da3cf5ead8929ea23785ebc47351c970a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"VisTY0rKyJsZ5UU_JlPF5HSEZGk9bnPq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/zuntic_control_v1/backend/web/'
+    '__id' => 5
+    '__authKey' => '6D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"93\", \" Not;A Brand\";v=\"99\", \"Chromium\";v=\"93\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.9'
+    'HTTP_COOKIE' => 'Webstorm-1924e008=b6cdbc41-c5cb-4d80-a337-faf1458f4192; advanced-frontend=ceh7mt2gtmokh8nmgvhim87k30; _identity-frontend=c2a30d5bbb284bf5c3cb9ebcf208d961b160e035d2d08f266fc0391cff9cb427a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%226D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND%22%2C2592000%5D%22%3B%7D; _csrf-frontend=e1b31e72961a57e4c7aa43d206d4a3853f58f2780e854f30ffceb7b5a91fa213a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22x0BLhmQjUn4na2HxqI-FFZQshSXw0Qtd%22%3B%7D; advanced-backend=hg7tie1c17a5ihg9q6tof2f2a3; _identity-backend=fa5543b268fddb870b56ae6d99639156efce497ee2907595e807317a17e052e7a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%226D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND%22%2C2592000%5D%22%3B%7D; _csrf-backend=5950bed5a248bc0bf41bc65fe6cb22b1da3cf5ead8929ea23785ebc47351c970a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22VisTY0rKyJsZ5UU_JlPF5HSEZGk9bnPq%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Rockwell Software\\RSCommon;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\composer;C:\\wamp64\\bin\\php\\php5.6.25;C:\\apache-svn\\bin;C:\\Program Files\\VisualSVN Server\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/7.0.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/7.0.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/zuntic_control_v1/backend/web/index.php'
+    'REMOTE_PORT' => '57243'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=hospedaje%2Findex'
+    'REQUEST_URI' => '/zuntic_control_v1/backend/web/index.php?r=hospedaje%2Findex'
+    'SCRIPT_NAME' => '/zuntic_control_v1/backend/web/index.php'
+    'PHP_SELF' => '/zuntic_control_v1/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1636577693.507
+    'REQUEST_TIME' => 1636577693
+]
+2021-11-10 20:55:01 [::1][5][hg7tie1c17a5ihg9q6tof2f2a3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "hospedaje%2index". in C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('hospedaje%2inde...', Array)
+#1 C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\zuntic_control_v1\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\zuntic_control_v1\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2021-11-10 20:55:00 [::1][5][hg7tie1c17a5ihg9q6tof2f2a3][info][application] $_GET = [
+    'r' => 'hospedaje%2index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Webstorm-1924e008' => 'b6cdbc41-c5cb-4d80-a337-faf1458f4192'
+    'advanced-frontend' => 'ceh7mt2gtmokh8nmgvhim87k30'
+    '_identity-frontend' => 'c2a30d5bbb284bf5c3cb9ebcf208d961b160e035d2d08f266fc0391cff9cb427a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[5,\"6D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND\",2592000]\";}'
+    '_csrf-frontend' => 'e1b31e72961a57e4c7aa43d206d4a3853f58f2780e854f30ffceb7b5a91fa213a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"x0BLhmQjUn4na2HxqI-FFZQshSXw0Qtd\";}'
+    'advanced-backend' => 'hg7tie1c17a5ihg9q6tof2f2a3'
+    '_identity-backend' => 'fa5543b268fddb870b56ae6d99639156efce497ee2907595e807317a17e052e7a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[5,\"6D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND\",2592000]\";}'
+    '_csrf-backend' => '5950bed5a248bc0bf41bc65fe6cb22b1da3cf5ead8929ea23785ebc47351c970a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"VisTY0rKyJsZ5UU_JlPF5HSEZGk9bnPq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/zuntic_control_v1/backend/web/'
+    '__id' => 5
+    '__authKey' => '6D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"93\", \" Not;A Brand\";v=\"99\", \"Chromium\";v=\"93\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.9'
+    'HTTP_COOKIE' => 'Webstorm-1924e008=b6cdbc41-c5cb-4d80-a337-faf1458f4192; advanced-frontend=ceh7mt2gtmokh8nmgvhim87k30; _identity-frontend=c2a30d5bbb284bf5c3cb9ebcf208d961b160e035d2d08f266fc0391cff9cb427a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%226D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND%22%2C2592000%5D%22%3B%7D; _csrf-frontend=e1b31e72961a57e4c7aa43d206d4a3853f58f2780e854f30ffceb7b5a91fa213a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22x0BLhmQjUn4na2HxqI-FFZQshSXw0Qtd%22%3B%7D; advanced-backend=hg7tie1c17a5ihg9q6tof2f2a3; _identity-backend=fa5543b268fddb870b56ae6d99639156efce497ee2907595e807317a17e052e7a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%226D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND%22%2C2592000%5D%22%3B%7D; _csrf-backend=5950bed5a248bc0bf41bc65fe6cb22b1da3cf5ead8929ea23785ebc47351c970a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22VisTY0rKyJsZ5UU_JlPF5HSEZGk9bnPq%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Rockwell Software\\RSCommon;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\composer;C:\\wamp64\\bin\\php\\php5.6.25;C:\\apache-svn\\bin;C:\\Program Files\\VisualSVN Server\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/7.0.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/7.0.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/zuntic_control_v1/backend/web/index.php'
+    'REMOTE_PORT' => '65526'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=hospedaje%2index'
+    'REQUEST_URI' => '/zuntic_control_v1/backend/web/index.php?r=hospedaje%2index'
+    'SCRIPT_NAME' => '/zuntic_control_v1/backend/web/index.php'
+    'PHP_SELF' => '/zuntic_control_v1/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1636577700.722
+    'REQUEST_TIME' => 1636577700
+]
+2021-11-10 20:55:10 [::1][5][hg7tie1c17a5ihg9q6tof2f2a3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "huesped%2index". in C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('huesped%2index', Array)
+#1 C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\zuntic_control_v1\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\zuntic_control_v1\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2021-11-10 20:55:10 [::1][5][hg7tie1c17a5ihg9q6tof2f2a3][info][application] $_GET = [
+    'r' => 'huesped%2index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Webstorm-1924e008' => 'b6cdbc41-c5cb-4d80-a337-faf1458f4192'
+    'advanced-frontend' => 'ceh7mt2gtmokh8nmgvhim87k30'
+    '_identity-frontend' => 'c2a30d5bbb284bf5c3cb9ebcf208d961b160e035d2d08f266fc0391cff9cb427a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[5,\"6D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND\",2592000]\";}'
+    '_csrf-frontend' => 'e1b31e72961a57e4c7aa43d206d4a3853f58f2780e854f30ffceb7b5a91fa213a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"x0BLhmQjUn4na2HxqI-FFZQshSXw0Qtd\";}'
+    'advanced-backend' => 'hg7tie1c17a5ihg9q6tof2f2a3'
+    '_identity-backend' => 'fa5543b268fddb870b56ae6d99639156efce497ee2907595e807317a17e052e7a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[5,\"6D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND\",2592000]\";}'
+    '_csrf-backend' => '5950bed5a248bc0bf41bc65fe6cb22b1da3cf5ead8929ea23785ebc47351c970a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"VisTY0rKyJsZ5UU_JlPF5HSEZGk9bnPq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/zuntic_control_v1/backend/web/'
+    '__id' => 5
+    '__authKey' => '6D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"93\", \" Not;A Brand\";v=\"99\", \"Chromium\";v=\"93\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.9'
+    'HTTP_COOKIE' => 'Webstorm-1924e008=b6cdbc41-c5cb-4d80-a337-faf1458f4192; advanced-frontend=ceh7mt2gtmokh8nmgvhim87k30; _identity-frontend=c2a30d5bbb284bf5c3cb9ebcf208d961b160e035d2d08f266fc0391cff9cb427a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%226D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND%22%2C2592000%5D%22%3B%7D; _csrf-frontend=e1b31e72961a57e4c7aa43d206d4a3853f58f2780e854f30ffceb7b5a91fa213a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22x0BLhmQjUn4na2HxqI-FFZQshSXw0Qtd%22%3B%7D; advanced-backend=hg7tie1c17a5ihg9q6tof2f2a3; _identity-backend=fa5543b268fddb870b56ae6d99639156efce497ee2907595e807317a17e052e7a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%226D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND%22%2C2592000%5D%22%3B%7D; _csrf-backend=5950bed5a248bc0bf41bc65fe6cb22b1da3cf5ead8929ea23785ebc47351c970a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22VisTY0rKyJsZ5UU_JlPF5HSEZGk9bnPq%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Rockwell Software\\RSCommon;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\composer;C:\\wamp64\\bin\\php\\php5.6.25;C:\\apache-svn\\bin;C:\\Program Files\\VisualSVN Server\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/7.0.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/7.0.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/zuntic_control_v1/backend/web/index.php'
+    'REMOTE_PORT' => '53411'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=huesped%2index'
+    'REQUEST_URI' => '/zuntic_control_v1/backend/web/index.php?r=huesped%2index'
+    'SCRIPT_NAME' => '/zuntic_control_v1/backend/web/index.php'
+    'PHP_SELF' => '/zuntic_control_v1/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1636577710.236
+    'REQUEST_TIME' => 1636577710
+]
+2021-11-10 20:55:21 [::1][5][hg7tie1c17a5ihg9q6tof2f2a3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "hospedaje". in C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('hospedaje', Array)
+#1 C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\zuntic_control_v1\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\zuntic_control_v1\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2021-11-10 20:55:20 [::1][5][hg7tie1c17a5ihg9q6tof2f2a3][info][application] $_GET = [
+    'r' => 'hospedaje'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Webstorm-1924e008' => 'b6cdbc41-c5cb-4d80-a337-faf1458f4192'
+    'advanced-frontend' => 'ceh7mt2gtmokh8nmgvhim87k30'
+    '_identity-frontend' => 'c2a30d5bbb284bf5c3cb9ebcf208d961b160e035d2d08f266fc0391cff9cb427a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[5,\"6D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND\",2592000]\";}'
+    '_csrf-frontend' => 'e1b31e72961a57e4c7aa43d206d4a3853f58f2780e854f30ffceb7b5a91fa213a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"x0BLhmQjUn4na2HxqI-FFZQshSXw0Qtd\";}'
+    'advanced-backend' => 'hg7tie1c17a5ihg9q6tof2f2a3'
+    '_identity-backend' => 'fa5543b268fddb870b56ae6d99639156efce497ee2907595e807317a17e052e7a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[5,\"6D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND\",2592000]\";}'
+    '_csrf-backend' => '5950bed5a248bc0bf41bc65fe6cb22b1da3cf5ead8929ea23785ebc47351c970a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"VisTY0rKyJsZ5UU_JlPF5HSEZGk9bnPq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/zuntic_control_v1/backend/web/'
+    '__id' => 5
+    '__authKey' => '6D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"93\", \" Not;A Brand\";v=\"99\", \"Chromium\";v=\"93\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.9'
+    'HTTP_COOKIE' => 'Webstorm-1924e008=b6cdbc41-c5cb-4d80-a337-faf1458f4192; advanced-frontend=ceh7mt2gtmokh8nmgvhim87k30; _identity-frontend=c2a30d5bbb284bf5c3cb9ebcf208d961b160e035d2d08f266fc0391cff9cb427a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%226D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND%22%2C2592000%5D%22%3B%7D; _csrf-frontend=e1b31e72961a57e4c7aa43d206d4a3853f58f2780e854f30ffceb7b5a91fa213a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22x0BLhmQjUn4na2HxqI-FFZQshSXw0Qtd%22%3B%7D; advanced-backend=hg7tie1c17a5ihg9q6tof2f2a3; _identity-backend=fa5543b268fddb870b56ae6d99639156efce497ee2907595e807317a17e052e7a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%226D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND%22%2C2592000%5D%22%3B%7D; _csrf-backend=5950bed5a248bc0bf41bc65fe6cb22b1da3cf5ead8929ea23785ebc47351c970a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22VisTY0rKyJsZ5UU_JlPF5HSEZGk9bnPq%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Rockwell Software\\RSCommon;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\composer;C:\\wamp64\\bin\\php\\php5.6.25;C:\\apache-svn\\bin;C:\\Program Files\\VisualSVN Server\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/7.0.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/7.0.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/zuntic_control_v1/backend/web/index.php'
+    'REMOTE_PORT' => '61710'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=hospedaje'
+    'REQUEST_URI' => '/zuntic_control_v1/backend/web/index.php?r=hospedaje'
+    'SCRIPT_NAME' => '/zuntic_control_v1/backend/web/index.php'
+    'PHP_SELF' => '/zuntic_control_v1/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1636577720.741
+    'REQUEST_TIME' => 1636577720
+]
+2021-11-10 20:55:47 [::1][5][hg7tie1c17a5ihg9q6tof2f2a3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "eatancia". in C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('eatancia', Array)
+#1 C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\zuntic_control_v1\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\wamp64\www\zuntic_control_v1\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\zuntic_control_v1\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2021-11-10 20:55:47 [::1][5][hg7tie1c17a5ihg9q6tof2f2a3][info][application] $_GET = [
+    'r' => 'eatancia'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Webstorm-1924e008' => 'b6cdbc41-c5cb-4d80-a337-faf1458f4192'
+    'advanced-frontend' => 'ceh7mt2gtmokh8nmgvhim87k30'
+    '_identity-frontend' => 'c2a30d5bbb284bf5c3cb9ebcf208d961b160e035d2d08f266fc0391cff9cb427a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[5,\"6D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND\",2592000]\";}'
+    '_csrf-frontend' => 'e1b31e72961a57e4c7aa43d206d4a3853f58f2780e854f30ffceb7b5a91fa213a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"x0BLhmQjUn4na2HxqI-FFZQshSXw0Qtd\";}'
+    'advanced-backend' => 'hg7tie1c17a5ihg9q6tof2f2a3'
+    '_identity-backend' => 'fa5543b268fddb870b56ae6d99639156efce497ee2907595e807317a17e052e7a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[5,\"6D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND\",2592000]\";}'
+    '_csrf-backend' => '5950bed5a248bc0bf41bc65fe6cb22b1da3cf5ead8929ea23785ebc47351c970a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"VisTY0rKyJsZ5UU_JlPF5HSEZGk9bnPq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/zuntic_control_v1/backend/web/'
+    '__id' => 5
+    '__authKey' => '6D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"93\", \" Not;A Brand\";v=\"99\", \"Chromium\";v=\"93\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.9'
+    'HTTP_COOKIE' => 'Webstorm-1924e008=b6cdbc41-c5cb-4d80-a337-faf1458f4192; advanced-frontend=ceh7mt2gtmokh8nmgvhim87k30; _identity-frontend=c2a30d5bbb284bf5c3cb9ebcf208d961b160e035d2d08f266fc0391cff9cb427a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%226D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND%22%2C2592000%5D%22%3B%7D; _csrf-frontend=e1b31e72961a57e4c7aa43d206d4a3853f58f2780e854f30ffceb7b5a91fa213a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22x0BLhmQjUn4na2HxqI-FFZQshSXw0Qtd%22%3B%7D; advanced-backend=hg7tie1c17a5ihg9q6tof2f2a3; _identity-backend=fa5543b268fddb870b56ae6d99639156efce497ee2907595e807317a17e052e7a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%226D_hF8Wvi2OEtMRICTmG4LbbMhwO16ND%22%2C2592000%5D%22%3B%7D; _csrf-backend=5950bed5a248bc0bf41bc65fe6cb22b1da3cf5ead8929ea23785ebc47351c970a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22VisTY0rKyJsZ5UU_JlPF5HSEZGk9bnPq%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Rockwell Software\\RSCommon;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\composer;C:\\wamp64\\bin\\php\\php5.6.25;C:\\apache-svn\\bin;C:\\Program Files\\VisualSVN Server\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/7.0.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/7.0.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/zuntic_control_v1/backend/web/index.php'
+    'REMOTE_PORT' => '60818'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=eatancia'
+    'REQUEST_URI' => '/zuntic_control_v1/backend/web/index.php?r=eatancia'
+    'SCRIPT_NAME' => '/zuntic_control_v1/backend/web/index.php'
+    'PHP_SELF' => '/zuntic_control_v1/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1636577747.396
+    'REQUEST_TIME' => 1636577747
+]
