@@ -49,11 +49,15 @@ AppAsset::register($this);
                         ['label' => 'Huespedes', 'url' => ['huesped/index']],
                         ['label' => 'Cuentas', 'url' => ['cuenta/index']],
                         ['label' => 'Estancia', 'url' => ['estancia/index']],
+
                         ['label' => 'Habitaciones', 'url' => ['habitacion/index']],
                         ['label' => 'Tipo de habitaciones', 'url' => ['tipo-habitacion/index']],   
                         ['label' => 'Estado', 'url' => ['estado/index']],
                         ['label' => 'Limpieza', 'url' => ['limpieza/index']],
-                        ['label' => 'Ocupacion', 'url' => ['ocupacion/index']],                                                 
+                        ['label' => 'Ocupacion', 'url' => ['ocupacion/index']],
+                        ['label' => 'Usuarios', 'url' => ['user/index']],
+                        ['label' => 'Perfiles', 'url' => ['perfil/index']],
+                        ['label' => 'Roles', 'url' => ['rol/index']],                                                
                     ],
         ];
 
