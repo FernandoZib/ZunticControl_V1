@@ -1,53 +1,26 @@
 <?php
 
-/* @var $this yii\web\View */
-
-$this->title = 'My Yii Application';
+$this->title = 'Zuntic Control';
 ?>
-<div class="site-index">
+<style>
+body {
+  background-image: url('../../imagenes/fondo.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+<h1>Sistema para el Manejo de Habitaciones</h1><h2> - Zuntic Control -</h2>
+<img src="../../imagenes/bienvenido1.png" style="width:30%;margin-left:35%">
+<img src="../../imagenes/contacto2.png" style="width:18%;margin-left:40%;margin-top:-10px;;">
 
-    <div class="jumbotron text-center bg-transparent">
-        <h1 class="display-4">Congratulations!</h1>
+    <style> h1{margin-left: 18%;margin-top:-8px;color: white;}.form-inline,.hola{color: white;}</style>
+    <style> h2{margin-left: 38%;margin-top:-8px;color: white;}.form-inline,.hola{color: white;}</style>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
-
-    </div>
-</div>
+  <footer class="container-fluid text-center">
+    <a href="#"><p class="hola">@Copyright</p>  </a>
+    <form class="form-inline">Conoce nuestras ofertas:
+    <input type="email" class="form-control" size="50" placeholder="Escribe tu correo electronico">
+    <button type="button" class="btn btn-danger">Registrate</button>
+    </form>
+  </footer
